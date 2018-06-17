@@ -44,7 +44,7 @@ def gradient_descent_runner(points  , initial_b , initial_m , learning_rate , nu
         b , m = step_gradient(b , m , array(points) , learning_rate)
     return [b,m]
 def run():
-    points = genfromtxt('C:\Rohit\Github\Machine Learning\Gradient descent\data.csv' , delimiter = ",")
+    points = genfromtxt('data.csv' , delimiter = ",")
     #hyperparamter learning rate defines how fast our model learns 
     learning_rate = .0001 
     # y = mx+ b (b is the intercept and m is the slope ) we are going to learn overtime
