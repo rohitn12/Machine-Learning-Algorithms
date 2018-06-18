@@ -46,3 +46,4 @@ def gradientDescent(x , y , learning_rate , num_iterations , theta):
         
     return theta , j 
 	
+#needs to be completed
