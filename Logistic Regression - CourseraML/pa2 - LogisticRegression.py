@@ -42,3 +42,16 @@ def predict(x , theta):
         return 1
     else:
         return 0
+		
+before_optimation = costGradient(init_theta , x , labels)
+print("before optimization" , before_optimation)
+
+optimization = optimizeTheta(init_theta , x , labels)
+print(optimization[1])
+
+theta  = optimization[0]
+c = costGradient(theta , x , labels)
+print("after optimation " , c)
+
+
+
